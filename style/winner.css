@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgba(0,0,0,0.908);
+    color: rgb(175, 243, 226);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    padding: 100px;
+
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+[class|="confetti"] {
+    position: absolute;
+}
+input{
+    color: #000;
+    border : solid #fff 1px;
+    font-size: 20px;
+    padding: 10px 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+input:hover{
+    color: grey;
+}

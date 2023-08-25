@@ -4,53 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: rgba(0,0,0,0.908);
-            color: rgb(175, 243, 226);
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        .container {
-            padding: 100px;
-
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 24px;
-        }
-
-        .wrapper {
-            position: relative;
-            min-height: 100vh;
-        }
-
-        [class|="confetti"] {
-            position: absolute;
-        }
-        input{
-            color: #000;
-            border : solid #fff 1px;
-            font-size: 20px;
-            padding: 10px 5px;
-            font-weight: bold;
-            border-radius: 5px;
-            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
-        }
-        input:hover{
-            color: grey;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style/winner.css">
+    <script src="./script/winner.js"></script>
 </head>
 <body>
     <div class="wrapper" id="confettiWrapper">
@@ -60,67 +15,5 @@
         </div>
         <input type="button" value="Back to Home Page" onclick="window.location.href='input.html'">
     </div>
-    
-    <script>
-
-        function getParameterByName(name, url) {
-            if (!url) url = window.location.href;
-            name = name.replace(/[\[\]]/g, '\\$&');
-            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-                results = regex.exec(url);
-            if (!results) return null;
-            if (!results[2]) return '';
-            return decodeURIComponent(results[2].replace(/\+/g, ' '));
-        }
-
-        // Get winner from URL parameter and display it
-        window.onload = function () {
-            var winner = getParameterByName('team');
-            var winnerElement = document.getElementById('winner');
-            winnerElement.textContent = winner;
-        };
-        const confettiWrapper = document.getElementById("confettiWrapper");
-
-        const colors = ['#d13447', '#ffbf00', '#263672', '#6495ed', '#a52a2a'];
-
-        for (let i = 0; i < 150; i++) {
-            const confettiDiv = document.createElement("div");
-            confettiDiv.className = "confetti-" + i;
-        
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            confettiDiv.style.backgroundColor = randomColor;
-        
-            const width = Math.random() * 6.5;
-            const height = width * 0.6;
-            confettiDiv.style.width = width + "px";
-            confettiDiv.style.height = height + "px";
-        
-            const left = Math.random() * 100;
-            const top = -10;
-            confettiDiv.style.left = left + "%";
-            confettiDiv.style.top = top + "%";
-        
-            const opacity = Math.random() + 0.5;
-            confettiDiv.style.opacity = opacity;
-        
-            const rotation = Math.random() * 360;
-            confettiDiv.style.transform = `rotate(${rotation}deg)`;
-        
-            const animationDuration = `4s`;
-            const animationDelay = `${Math.random() * 4}s`;
-            confettiDiv.style.animation = `drop-${i} ${animationDuration} ${animationDelay} infinite`;
-
-            document.styleSheets[0].insertRule(`
-                @keyframes drop-${i} {
-                    100% {
-                        top: 110%;
-                        left: ${left + Math.random() * 15}%;
-                    }
-                }
-            `);
-
-            confettiWrapper.appendChild(confettiDiv);
-        }
-    </script>
 </body>
 </html>
