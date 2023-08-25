@@ -464,9 +464,11 @@ const calculateWinner = () => {
     } else {
         winner =  "Match Tied";
     }
-    currentInning = 1
-    window.location.href = `winner.html?team=${winner}`;
+    // currentInning = 1
+    // window.location.href = `winner.html?team=${winner}`;
     // alert(`The winner is ${winner}`);
+    localStorage.setItem('winner', winner)
+    window.location.replace("winner.html")
 }
 
 const penaltyBowl = () => {
