@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="input.css">
+    <script src="input.js" type="module"></script>
+</head>
+<body>
+
+    <header>Scorebuzz</header>
+    <main>
+      <form>
+        
+          <input 
+            type="text" 
+            name="Team" 
+            placeholder="Enter team name" 
+            pattern="[A-Z a-z]+" 
+            id="team1name"
+            required
+          />
+          <div>V/S</div>
+          <input 
+            type="text" 
+            name="Team" 
+            placeholder="Enter team name" 
+            pattern="[A-Z a-z]+" 
+            id="team2name"
+            required
+          />
+            
+          <input 
+            type="number"
+            min="1" 
+            name="Overs"
+            placeholder="Enter overs"
+            id="overs"
+            required
+          />
+          <input 
+            type="button" 
+            class='submit' 
+            id="submit"
+            value="Start Match" 
+          />
+        
+      </form>
+    </main>
+    <footer>&copy; copyright 2023 | Scorebuzz | All rights reserved</footer>
+</body>
+</html>
