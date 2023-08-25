@@ -1,67 +1,246 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    letter-spacing: -.003em;
-    line-height: 1.08349;
+@media only screen and (min-device-width: 200px) and (max-device-width : 497px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        letter-spacing: -.003em;
+        line-height: 1.08349;
+    }
+
+
+    header{
+        background-color: #800000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 0.2rem;
+        margin: auto;
+        color: white;
+    }
+    .inner{
+        width: 100%;
+    }
+
+    .inning{
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: auto;
+    }
+
+    #top{
+        border: solid black 1px;
+        font-size: 0.8rem;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0.5rem;
+        background-color: rgb(235, 206, 206);
+    }
+
+    #between{
+        padding: 1.5rem;
+    }
+    #between h1{
+        text-align: center;
+    }
+
+    #between .div{
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+
+    #between 
+        .runswicket, .totalovers, .powerplay{
+            
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        #between .box{
+            /* width: 100%; */
+            display: flex;
+            border: solid 1px;
+            justify-content: space-between;
+            padding: 10px 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgb(235, 206, 206);
+        }
+        #between .box .runrate p,
+        #between .box .target p{
+            padding: 5px;
+        }
+
+        .powerplay p{
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+    .inner .timeline {
+        height : 1rem;
+        /* border: solid black 1px; */
+        display: flex;
+        justify-content: left;
+        overflow: hidden;
+        padding: 0.5rem;
+        background-color: #800000;
+        color: #fff;
+    }
+
+    .inner .timeline #time{
+        min-width:100px;
+    }
+
+    .inner .timeline #timelineOver{
+        justify-content: end;
+    }
+
+    #bottom{
+        padding: 0.4rem 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        /* display : flex; */
+        /* flex-wrap : wrap; */
+        /* border: solid black 1px; */
+    }
+
+    #bottom input[type=button]{
+        /* flex : 1; */
+        width: 23.2%;
+        min-height : 7vh;
+        font-size : 1.2rem;
+        background-color: #fff;
+        margin: auto;
+        margin-bottom: 2px;
+        border: none;
+        box-shadow: 0.1rem 0.1rem 0.2rem #d3d3d3;
+    }
+
+    #bottom #second input[type=button]:nth-child(3){
+        background-color: #800000;
+        color:#fff;
+        font-weight: bold;
+    }
+
+    #bottom #second input[type=button]:nth-child(3):active{
+        background-color: #fff;
+        color:#800000;
+        font-weight: bold;
+        border: solid #800000 2px;
+    }
+
+    #bottom input[type=button]:active{
+        background-color: #800000;
+        color: white;
+    }
+
+    #bottom #fourth #zeroButton{
+        width: 35.5%;
+    }
+
+    #bottom #fourth #oneButton{
+        width: 35.5%;
+    }
+
+    #footer{
+        width: 100%;
+        background-color: #800000;
+        text-align: center;
+        bottom: 0;
+        position: fixed;
+        font-size: 1rem;
+        padding: 0.2rem;
+        color: white;
+    }
 }
 
 
-header{
-    background-color: #800000;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0.2rem;
-    color: white;
-}
-.inner{
-    width: 100%;
-}
 
-.inning{
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: auto;
-}
+/*------------LAPTOP----------*/
 
-#top{
-    border: solid black 1px;
-    font-size: 0.8rem;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    padding: 0.5rem;
-    background-color: rgb(235, 206, 206);
-}
+@media only screen 
+    and (min-device-width: 498px)
+    {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        letter-spacing: -.003em;
+        line-height: 1.08349;
+        box-sizing: border-box;
+    }
+    .inner{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: fit-content;
+        max-width: 500px;
+        box-shadow: 0.1rem 0.1rem 2rem #333;
+    }
 
-#between{
-    padding: 1.5rem;
-}
-#between h1{
-    text-align: center;
-}
+    header{
+        background-color: #800000;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.2rem;
+        color: white;
+    }
 
-#between .div{
-    display: flex;
-    /* justify-content: center; */
-    flex-direction: column;
-}
+    .inning{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: auto;
+        padding: 5px;
+    }
 
-#between 
+    #top{
+        border: solid black 1px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: rgb(235, 206, 206);
+        border: none;
+    }
+    #left h1, #left h2, #left h3,
+    #right h1, #right h2, #right h3{
+        padding: 1px;
+    }
+
+    #between{
+        padding: 10px 20px;
+    }
+    #between h1{
+        text-align: center;
+    }
+
+    #between .div{
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        padding: 5px;
+    }
+    #between 
     .runswicket, .totalovers, .powerplay{
-        
         display: flex;
         justify-content: center;
         padding: 10px;
     }
     #between .box{
-        /* width: 100%; */
         display: flex;
-        border: solid 1px;
+        border: solid 2px;
         justify-content: space-between;
-        padding: 10px 10px;
+        padding: 10px 30px;
         font-size: 20px;
         font-weight: bold;
         text-align: center;
@@ -77,78 +256,127 @@ header{
         font-weight: bold;
     }
 
-.inner .timeline {
-    height : 1rem;
-    border: solid black 1px;
-    display: flex;
-    justify-content: left;
-    overflow: hidden;
-    padding: 0.5rem;
-    background-color: #800000;
-    color: #fff;
-}
+    .inner .timeline {
+        height : 35px;
+        /* border: solid black 1px; */
+        display: flex;
+        justify-content: left;
+        overflow: hidden;
+        padding: 0.5rem;
+        background-color: #800000;
+        color: #fff;
+    }
+    
+    .inner .timeline #time{
+        min-width:100px;
+    }
+    
+    .inner .timeline #timelineOver{
+        justify-content: end;
+    }
 
-.inner .timeline #time{
-    min-width:100px;
-}
+    /* .inner .timeline {
+        border: solid black 1px;
+        display: flex;
+        font-size: 20px;
+        justify-content: flex-end;
+         overflow: hidden; 
+        padding: 5px;
+        background-color: #800000;
+        color: #fff;
+        overflow: auto;  Hide overflow initially 
+        max-width: 100%;       
+        height: 30px;
+    } */
 
-.inner .timeline #timelineOver{
-    justify-content: end;
-}
+    /* .inner .timeline {
+        display : flex;
+        overflow: auto;
+        justify-content: end;
+        background-color: maroon;
+        color: #fff;
+        border: solid 2px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .inner .timeline .currenttimeline{
+        left: 0;margin-left: 0;
+        position: fixed;
+        border: solid 5px;
+    }
+    .inner .timeline .timelineOver{
+        min-width : 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 5px;
+        border-radius: 20px;
+        background : maroon;
+        color : #fff;
+        font-size: 30px;
+    } */
+    #bottom{
+        padding: 0.4rem 0;
+        display : flex;
+        flex-wrap : wrap;
+    }
 
-#bottom{
-    padding: 0.4rem 0;
-    margin-right: 5px;
-    margin-left: 5px;
-    /* display : flex; */
-    /* flex-wrap : wrap; */
-    /* border: solid black 1px; */
-}
+    #bottom #first input[type=button],
+    #bottom #second input[type=button],
+    #bottom #third input[type=button]{
+        flex : 1;
+        min-width : 108.5px;
+        min-height : 72px;
+        font-size : 20px;
+        font-weight: bold;
+        background-color: #fff;
+        margin: 0.4rem;
+        border: none;
+        box-shadow: 0.1rem 0.1rem 0.2rem #d3d3d3;
+    }
 
-#bottom input[type=button]{
-    /* flex : 1; */
-    width: 23.2%;
-    min-height : 70px;
-    font-size : 1.2rem;
-    background-color: #fff;
-    margin: 0.1rem;
-    border: none;
-    box-shadow: 0.1rem 0.1rem 0.2rem #d3d3d3;
-}
+    #bottom #fourth input[type=button]{
+        flex: 1;
+        min-width: 150px;
+        min-height: 72px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #fff;
+        margin: 0.4rem;
+        border: none;
+        box-shadow: 0.1rem 0.1rem 0.2rem #d3d3d3;
+    }
 
-#bottom #second input[type=button]:nth-child(3){
-    background-color: #800000;
-    color:#fff;
-    font-weight: bold;
-}
+    #bottom #second input[type=button]:nth-child(3){
+        background-color: #800000;
+        color:#fff;
+        font-weight: bold;
+    }
+    #bottom #second input[type=button]:nth-child(3):hover{
+        background-color: #fff;
+        color:#800000;
+        font-weight: bold;
+        border: solid #800000 2px;
+    }
+    /* #bottom input[type=button]:nth-child(7):active{
+        background-color: #fff;
+        color:#800000;
+        font-weight: bold;
+        border: solid #800000 2px;
+    } */
 
-#bottom #second input[type=button]:nth-child(3):active{
-    background-color: #fff;
-    color:#800000;
-    font-weight: bold;
-    border: solid #800000 2px;
-}
+    #bottom +input[type=button]:active{
+        background-color: #800000;
+        color: white;
+    }
 
-#bottom input[type=button]:active{
-    background-color: #800000;
-    color: white;
-}
-
-#bottom #fourth #zeroButton{
-    width: 35.5%;
-}
-
-#bottom #fourth #oneButton{
-    width: 35.5%;
-}
-
-#footer{
-    width: 100%;
-    background-color: #8b0000;
-    text-align: center;
-    bottom: 0;
-    position: fixed;
-    font-size: 1rem;
-    padding: 0.2rem;
-    color: white;
+    footer{
+        width: 100%;
+        background-color: #8b0000;
+        text-align: center;
+        bottom: 0;
+        position: fixed;
+        font-size: 1rem;
+        padding: 0.2rem;
+        color: white;
+    }
 }
