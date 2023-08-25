@@ -257,7 +257,7 @@
     }
 
     .inner .timeline {
-        height : 35px;
+        /* height : 35px; */
         /* border: solid black 1px; */
         display: flex;
         justify-content: left;
@@ -268,7 +268,7 @@
     }
     
     .inner .timeline #time{
-        min-width:100px;
+        min-width:110px;
     }
     
     .inner .timeline #timelineOver{
