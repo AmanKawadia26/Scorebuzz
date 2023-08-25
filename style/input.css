@@ -3,6 +3,7 @@
     padding: auto;
     background-color : #dbdde0;
     box-sizing: border-box;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     width: auto;
     /* background-image : url("https://imgs.search.brave.com/0tFT6V1kSqRCFMPmSGxJWpGVuOnk-jPRUA8yGD5Nqb4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9n/cmVlbi1ncmFzcy10/ZXh0dXJlXzEyNDkt/MTUuanBnP3NpemU9/NjI2JmV4dD1qcGc"); */
 }
@@ -40,7 +41,7 @@ div{
     font-weight: bold;
     background: maroon;
     padding: 0.5rem;
-    margin: 0 auto 1rem;
+    margin: auto;
 }
 input{
     /* width: 60%; */
