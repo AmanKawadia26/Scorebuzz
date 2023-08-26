@@ -1,20 +1,8 @@
+let winner = ""
 document.addEventListener('DOMContentLoaded', () => {
-    function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    // Get winner from URL parameter and display it
-    window.onload = function () {
-        var winner = getParameterByName('team');
-        var winnerElement = document.getElementById('winner');
-        winnerElement.textContent = winner;
-    };
+    winner = localStorage.getItem('winner')
+    document.getElementById('winner').innerHTML = winner
+    
     const confettiWrapper = document.getElementById("confettiWrapper");
 
     const colors = ['#d13447', '#ffbf00', '#263672', '#6495ed', '#a52a2a'];

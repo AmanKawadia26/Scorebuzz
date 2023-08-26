@@ -136,7 +136,10 @@
         border: solid #800000 2px;
     }
 
-    #bottom input[type=button]:active{
+    #bottom #first input[type=button]:active,
+    #bottom #second input[type=button]:active,
+    #bottom #third input[type=button]:active,
+    #bottom #fourth input[type=button]:active{
         background-color: #800000;
         color: white;
     }
@@ -364,7 +367,11 @@
         border: solid #800000 2px;
     } */
 
-    #bottom input[type=button]:active{
+    
+    #bottom #first input[type=button]:active,
+    #bottom #second input[type=button]:active,
+    #bottom #third input[type=button]:active,
+    #bottom #fourth input[type=button]:active{
         background-color: #800000;
         color: white;
     }
