@@ -51,8 +51,7 @@
 
     #between .div{
         display: flex;
-        /* justify-content: center; */
-        flex-direction: column;
+         flex-direction: column;
     }
 
     #between 
@@ -63,8 +62,7 @@
             padding: 10px;
         }
         #between .box{
-            /* width: 100%; */
-            display: flex;
+             display: flex;
             border: solid 1px;
             justify-content: space-between;
             padding: 10px 10px;
@@ -85,7 +83,6 @@
 
     .inner .timeline {
         height : 1rem;
-        /* border: solid black 1px; */
         display: flex;
         justify-content: left;
         overflow: hidden;
@@ -106,13 +103,9 @@
         padding: 0.4rem 0;
         margin-right: 5px;
         margin-left: 5px;
-        /* display : flex; */
-        /* flex-wrap : wrap; */
-        /* border: solid black 1px; */
-    }
+        }
 
     #bottom input[type=button]{
-        /* flex : 1; */
         width: 24%;
         min-height : 7vh;
         font-size : 1.2rem;
@@ -257,8 +250,6 @@
     }
 
     .inner .timeline {
-        /* height : 35px; */
-        /* border: solid black 1px; */
         display: flex;
         justify-content: left;
         overflow: hidden;
@@ -275,45 +266,6 @@
         justify-content: end;
     }
 
-    /* .inner .timeline {
-        border: solid black 1px;
-        display: flex;
-        font-size: 20px;
-        justify-content: flex-end;
-         overflow: hidden; 
-        padding: 5px;
-        background-color: #800000;
-        color: #fff;
-        overflow: auto;  Hide overflow initially 
-        max-width: 100%;       
-        height: 30px;
-    } */
-
-    /* .inner .timeline {
-        display : flex;
-        overflow: auto;
-        justify-content: end;
-        background-color: maroon;
-        color: #fff;
-        border: solid 2px;
-        padding: 10px;
-        font-size: 20px;
-    }
-    .inner .timeline .currenttimeline{
-        left: 0;margin-left: 0;
-        position: fixed;
-        border: solid 5px;
-    }
-    .inner .timeline .timelineOver{
-        min-width : 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 5px;
-        border-radius: 20px;
-        background : maroon;
-        color : #fff;
-        font-size: 30px;
-    } */
     #bottom{
         padding: 0.4rem 0;
         display : flex;
@@ -357,12 +309,6 @@
         font-weight: bold;
         border: solid #800000 2px;
     }
-    /* #bottom input[type=button]:nth-child(7):active{
-        background-color: #fff;
-        color:#800000;
-        font-weight: bold;
-        border: solid #800000 2px;
-    } */
 
     #bottom #first input[type=button]:active,
     #bottom #second input[type=button]:active,
