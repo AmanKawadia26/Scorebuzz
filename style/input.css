@@ -7,7 +7,6 @@
     width: auto;
     letter-spacing: -.003em;
     line-height: 1.08349;
-    /* background-image : url("https://imgs.search.brave.com/0tFT6V1kSqRCFMPmSGxJWpGVuOnk-jPRUA8yGD5Nqb4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9n/cmVlbi1ncmFzcy10/ZXh0dXJlXzEyNDkt/MTUuanBnP3NpemU9/NjI2JmV4dD1qcGc"); */
 }
 header{
     background-color: #800000;
@@ -24,11 +23,8 @@ header{
 }
 
 form {
-    /* width: auto; */
-    /* margin: auto; */
     width:fit-content;
     max-height: 100vh;
-    /* background-image: url("https://t4.ftcdn.net/jpg/01/68/38/25/240_F_168382591_Rlu6tBCBz25IHC74nLtQCdw4yXpfW1qn.jpg"); */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -40,7 +36,6 @@ form {
 }
 
 div{
-    /* width: 3rem; */
     color: #fff;
     border: solid #fff 2px;
     border-radius: 0.4rem;
@@ -51,7 +46,6 @@ div{
     margin: auto;
 }
 input{
-    /* width: 60%; */
     text-align: left;
     font-size: 1.2rem;
     border: solid 1px;
@@ -62,7 +56,6 @@ input{
 }
 
 .submit{
-    /* width: 60%; */
     text-align: center;
     background : linear-gradient(to bottom, #9c1717 0%, #450411 100%);
     color: #fff;
