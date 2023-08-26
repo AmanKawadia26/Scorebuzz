@@ -5,15 +5,22 @@
     box-sizing: border-box;
     font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     width: auto;
+    letter-spacing: -.003em;
+    line-height: 1.08349;
     /* background-image : url("https://imgs.search.brave.com/0tFT6V1kSqRCFMPmSGxJWpGVuOnk-jPRUA8yGD5Nqb4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9n/cmVlbi1ncmFzcy10/ZXh0dXJlXzEyNDkt/MTUuanBnP3NpemU9/NjI2JmV4dD1qcGc"); */
 }
 header{
+    background-color: #800000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: white;
+    text-align: center;
     padding: 0.2rem;
-    background : linear-gradient(to bottom, #9c1717 0%, #450411 100%);
+    margin: auto;
+    color: white;
 }
 
 form {
