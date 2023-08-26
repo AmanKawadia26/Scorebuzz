@@ -6,7 +6,6 @@ let totalBalls = 0
 let Runs = []
 let currentInning = 1;
 let timelineForOver = []
-// let timeline = []
 let timelineOver = []
 let freeHitActive = false
 let freeHitBall = 0
@@ -77,12 +76,9 @@ const wicket = () => {
     }
     if(wickets<10){
         wickets = wickets + 1
-        // balls = balls + 1
         totalBalls = totalBalls + 1
         timelineForOver.push("W")
-        // timeline.push("W")
         increaseBalls()
-        // updateTimeline();
         toBePrinted()
     }
     else{
@@ -97,12 +93,9 @@ const wicket = () => {
 const one = () => {
     enable()
     runs = runs + 1
-    // balls = balls + 1
     totalBalls = totalBalls + 1
     timelineForOver.push(1)
-    // timeline.push(1)
     increaseBalls()
-    // updateTimeline();
     toBePrinted()
 }
 
@@ -113,72 +106,54 @@ const updateTimeline = () => {
 
 const zero = () => {
     enable()
-    // balls = balls + 1
     totalBalls = totalBalls + 1
     timelineForOver.push(0)
-    // timeline.push(0)
     increaseBalls()
-    // updateTimeline();
     toBePrinted()
 }
 
 const two= () => {
     enable()
     runs = runs + 2
-    // balls = balls + 1
     totalBalls = totalBalls + 1
     timelineForOver.push(2)
-    // timeline.push(2)
     increaseBalls()
-    // updateTimeline();
     toBePrinted()
 }
 
 const three = () => {
     enable()
     runs = runs + 3
-    // balls = balls + 1
     totalBalls = totalBalls + 1
     timelineForOver.push(3)
-    // timeline.push(3)
     increaseBalls()
-    // updateTimeline();
     toBePrinted()
 }
 
 const four = () => {
     enable()
     runs = runs + 4
-    // balls = balls + 1
     totalBalls = totalBalls + 1
     timelineForOver.push(4)
-    // timeline.push(4)
     increaseBalls()
-    // updateTimeline();
     toBePrinted()
 }
 
 const five = () => {
     enable()
     runs = runs + 5
-    // balls = balls + 1
     totalBalls = totalBalls + 1
     timelineForOver.push(5)
-    // timeline.push(5)
     increaseBalls()
-    // updateTimeline();
     toBePrinted()
 }
 
 const six = () => {
     enable()
     runs = runs + 6
-    // balls = balls + 1
     totalBalls = totalBalls + 1
     timelineForOver.push(6)
-    // timeline.push(6)
     increaseBalls()
-    // updateTimeline();
     toBePrinted()
 }
 
@@ -193,8 +168,6 @@ const wide = () => {
     balls = balls - 1
     totalBalls = totalBalls - 1
     timelineForOver.push("WD")
-    // timeline.push("WD")
-    // updateTimeline();
     document.getElementById('runs').innerHTML=runs;
 }
 
@@ -207,8 +180,6 @@ const bye = () => {
     document.getElementById('wicketButton').disabled = true
     document.getElementById('wideButton').disabled = true
     timelineForOver.push("B")
-    // timeline.push("B")
-    // updateTimeline();
 }
 
 const legBye = () => {
@@ -220,8 +191,6 @@ const legBye = () => {
     document.getElementById('wicketButton').disabled = true
     document.getElementById('wideButton').disabled = true
     timelineForOver.push("LB")
-    // timeline.push("LB")
-    // updateTimeline();
 }
 
 const noBall = () => {
@@ -239,8 +208,6 @@ const noBall = () => {
     timelineForOver.push("NB")
     document.getElementById('wicketButton').value="Runout"
     freeHitActive = true
-    // timeline.push("NB")
-    // updateTimeline();
 }
 
 const freeHit = () => {
@@ -340,16 +307,11 @@ const toBePrinted = () => {
         else{
             document.getElementById('runRate').innerHTML =((runs/totalBalls)*6).toFixed(2);
         }
-        // if(timelineForOver[timelineForOver.length-1] === "NB" || timelineForOver[timelineForOver.length-2] === "NB"){
-        //     document.getElementById('wicketButton').value="Runout"
-        //     freeHitActive = true
-        // }
         freeHit()
         if(freeHitActive === false){
             document.getElementById('wicketButton').value="W"
             freeHitBall = balls + 1
         }
-        //  FreeHit()
         winRuns();
 }
 
@@ -386,7 +348,6 @@ const decreaseOvers = () => {
         overs = overs - 1
         balls = 6
         timelineForOver = timelineOver[timelineOver.length - 1]
-        // timelineOver.pop()
     }
     else if(balls === 0 && overs === 0){
         overs = 0
@@ -400,15 +361,6 @@ const increaseBalls = () => {
 }
 
 const maxOvers = () => {
-    // if(overs < (maxOver * 0.2)){
-    //     document.getElementById('powerplayStatus').innerHTML = "1 (Max 2 players can be outside 30 yards circle)"
-    // }
-    // else if((overs >= (maxOver * 0.2)) && (overs < (maxOver * 0.8))){
-    //     document.getElementById('powerplayStatus').innerHTML = "2 (Max 4 players can be outside 30 yards circle)"
-    // }
-    // else{
-    //     document.getElementById('powerplayStatus').innerHTML = "3 (Max 5 players can be outside 30 yards circle)"
-    // }
     if(overs == maxOver){
         declare()
     }
@@ -446,7 +398,6 @@ const declare = () => {
     overs = 0;
     totalBalls = 0;
     timelineForOver = []
-    // timeline = []
     timelineOver = []
 
     toBePrinted();
@@ -464,9 +415,6 @@ const calculateWinner = () => {
     } else {
         winner =  "Match Tied";
     }
-    // currentInning = 1
-    // window.location.href = `winner.html?team=${winner}`;
-    // alert(`The winner is ${winner}`);
     localStorage.setItem('winner', winner)
     window.location.replace("winner.html")
 }
